@@ -5,7 +5,6 @@ import './App.css';
 
 function Painting() {
     const [painting, setPainting] = useState(0);
-    const [paintingText, setPaintingText] = useState(dataSix);
     const [showMore, setShowMore] = useState(false);
     const {id, name, image} = dataFour[painting];
 
@@ -36,7 +35,7 @@ function Painting() {
         </div>
 
         <div className="container">
-            {paintingText.map((item => {
+            {dataSix.map((item => {
                 const{id, description} = item;
 
                 return (

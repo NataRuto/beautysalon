@@ -4,7 +4,6 @@ import { dataSeven } from "./dataSeven";
 
 function Laying() {
     const [laying, setLaying] = useState(0);
-    const [layingText, setLayingText] = useState(dataSeven);
     const [showMore, setShowMore] = useState(false);
     const {id, name, image} = dataThree[laying];
 
@@ -35,7 +34,7 @@ function Laying() {
         </div>
 
         <div className="container">
-            {layingText.map((item => {
+            {dataSeven.map((item => {
                 const{id, description} = item;
 
                 return(

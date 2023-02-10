@@ -4,7 +4,6 @@ import { dataEight } from "./dataEight";
 
 function Nailcare() {
     const [nailcare, setNailcare] = useState(0);
-    const [nailText, setNailText] = useState(dataEight);
     const [showMore, setShowMore] = useState(false);
     const {id, name, image} = dataNine[nailcare];
 
@@ -35,7 +34,7 @@ function Nailcare() {
         </div>
 
         <div className="container">
-            {nailText.map((item => {
+            {dataEight.map((item => {
                 const{id, description} = item;
 
                 return(

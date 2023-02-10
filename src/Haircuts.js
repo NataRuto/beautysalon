@@ -6,7 +6,6 @@ import './App.css';
 
 function Haircuts() {
     const [haircut, setHaircut] = useState(0);
-    const [hairdesc, setHairdesc] = useState(dataFive);
     const [showMore, setShowMore] = useState(false);
     const {id, name, image} = dataTwo[haircut];
 
@@ -36,7 +35,7 @@ function Haircuts() {
             <h1>Наши работы</h1>
         </div>
         <div className="container">
-            {hairdesc.map((item => {
+            {dataFive.map((item => {
                 const{id, description} = item;
 
                 return (
