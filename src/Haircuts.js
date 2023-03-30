@@ -4,6 +4,7 @@ import './App.css';
 import Sliders from "./Sliders";
 
 
+
  function Haircuts() {
     const [haircut, setHaircut] = useState(0);
     const [showMore, setShowMore] = useState(false);
